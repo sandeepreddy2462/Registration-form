@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Form Demo</title>
+</head>
+
+<body>
+    <div class="login-wrapper">
+        <form action="" class="form" onsubmit="return validateForm()">
+            <h2>Create Account</h2>
+            <div class="input-group">
+                <input type="text" name="loginUser" id="username" required>
+                <label for="loginUser">Choose Username</label>
+            </div>
+
+            <div class="input-group">
+                <input type="email" name="email" id="email" required>
+                <label for="email">Email</label>
+            </div>
+
+            <div class="input-group">
+                <input type="password" name="loginPassword" id="loginPassword" required>
+                <label for="loginPassword">Set Password</label>
+            </div>
+
+            <div class="input-group">
+                <input type="password" name="RePassword" id="RePassword" required>
+                <label for="RePassword">Confirm password</label>
+            </div>
+
+            <input type="submit" id="btn" value="Sign Up" class="signup-btn">
+            <a href="#sign-in" class="sign-in">Already have an acoount?</a>
+        </form>
+
+        <div id="sign-in">
+            <form action="" class="form" onsubmit="return validatedetails()">
+                <a href="#" class="signin-box">&#8592;signup</a>
+                <h2>Log In</h2>
+                <div class="input-group">
+                    <input type="email" name="email" id="email" required>
+                    <label for="email" class="email">Email</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="Password" id="loginPassword" required>
+                    <label for="password">Password</label>
+                </div>
+                <input type="submit" value="Sign In" id="btn" class="signin-btn">
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
